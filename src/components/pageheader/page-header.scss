@@ -1,0 +1,34 @@
+@use '../../scss/' as *;
+.page-header{
+    text-align: center;
+    position: relative;
+
+padding:$header-height 0 2rem;
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+h2 {
+    position: relative;
+    z-index: 99;
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    color: azure;
+}
+
+&::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+ background-image: linear-gradient(to top, $body-bg, rgba($black, 0));
+}
+}
+
+
